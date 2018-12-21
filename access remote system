@@ -1,0 +1,26 @@
+
+
+--> this is to guide you to access remote system which is currently in different network.
+
+-->there is two way to do it 
+	-->using VPN
+	-->Expose Remote Desktop Directly to the Internet
+
+-->How to setup VPN server on window system
+	
+	ref :-
+	-->https://www.howtogeek.com/135996/how-to-create-a-vpn-server-on-your-windows-computer-without-installing-any-software/
+
+-->How to setup VPN servere on linux system
+	
+	ref:-
+	-->https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-16-04
+
+
+-->How to port forword on router
+	
+	ref:-
+	-->https://www.howtogeek.com/66214/how-to-forward-ports-on-your-router/
+
+-->List of TCP and UDP reserved port numbers:-
+	-->https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers 

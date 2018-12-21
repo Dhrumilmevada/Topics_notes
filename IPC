@@ -1,0 +1,37 @@
+
+-->Interprocess communication (IPC) is a set of programming interfaces that allow a programmer to coordinate activities among different program 	processes that can run concurrently in an operating system.
+
+
+-->Shared memory :-
+	
+	->In computer programming, shared memory is a method by which program processes can exchange data more quickly than by reading and 				writing using the regular operating system services. 
+	->For example, a client process may have data to pass to a server process that the server process is to modify and return to the client.
+	->Ordinarily, this would require the client writing to an output file (using the buffers of the operating system) and the server then 				reading that file as input from the buffers to its own work space. 
+	->Using a designated area of shared memory, the data can be made directly accessible to both processes without having to use the system 			services.
+
+
+-->Semaphore :-
+
+	->semaphores are a technique for coordinating or synchronizing activities in which multiple processes compete for the same operating system 		resources.
+	->Depending on the value that is found, the process can use the resource or will find that it is already in use and must wait for some 			period before trying again.
+
+-->Network Socket :-
+	->Sockets can also be used for communication between processes within the same computer and other computer.
+	->For that we have to create socket and find it to perticular address and port.
+
+-->Pipe :-
+	->Unlike other forms of interprocess communication (IPC), a pipe is one-way communication only. Basically, a pipe passes a parameter such 			as the output of one process to another process which accepts it as input.
+	->For two-way communication between processes, two pipes can be set up, one for each direction.
+	->A pipe is fixed in size and is usually at least 4,096 bytes.
+	->A limitation of pipes for interprocess communication is that the processes using pipes must have a common parent process (that is, share 			a common open or initiation process and exist as the result of a fork system call from a parent process). 
+
+
+-->Named pipe or FIFO :-
+	->named pipe is sometimes called a "FIFO" (first in, first out) because the first data written to the pipe is the first data that is read 			from it.
+
+
+-->Message queue :-
+	-> A message queue can be created by one process and used by multiple processes that read and/or write messages to the queue.
+	->n UNIX systems, the C programming language msgget function is used with various parameters specifying the action requested, message queue 		ID, message type, and so forth.
+	->The maximum size of a message in a queue is limited by the operating system and is typically 8,192 bytes.
+

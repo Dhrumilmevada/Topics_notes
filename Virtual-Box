@@ -1,0 +1,6 @@
+
+-->Most virtual machines are hosted on, or works inside of, a physical machine. For virtual machine to work, the hosted physical machine 		provides software called hypervisor.
+
+-->A thin layer of software called a “hypervisor” decouples the virtual machines from the host and dynamically allocates computing resources to 	each virtual machine as needed.
+
+-->Yes, They have different virtual IP addresses as each of the VM's have a virtual NIC which does hardware virtualization and uses the 		underlying Physical NIC to send packets.

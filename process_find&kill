@@ -1,0 +1,10 @@
+
+
+-->ps aux | grep -i “name of your desired program”
+
+-->sudo kill -9 process_id
+
+
+ref:-
+	https://itsfoss.com/how-to-find-the-process-id-of-a-program-and-kill-it-quick-tip/
+	https://askubuntu.com/questions/180336/how-to-find-the-process-id-pid-of-a-running-terminal-program

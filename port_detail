@@ -1,0 +1,8 @@
+
+
+--> $ netstat -ltnp | grep -w 80
+
+--> $ lsof -i :80
+
+--> $ fuser 80/tcp 
+

@@ -1,0 +1,11 @@
+
+
+-->gcc -c -Wall -Werror -fpic foo.c 			//to convert .c to .o 
+
+-->gcc -shared -o libfoo.so foo.o			// to generate dynamic liabrary	
+
+-->gcc -L/home/username/foo -Wall -o test main.c -lfoo	//link dynamic liabrary
+
+-->export LD_LIBRARY_PATH=/home/username/foo:$LD_LIBRARY_PATH //set liabrary path
+
+-->./test						//run program

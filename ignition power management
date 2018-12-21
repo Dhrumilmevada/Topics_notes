@@ -1,0 +1,8 @@
+
+-->configuration of the Ignition Power Management feature of the IR829 router.
+
+-->It also keeps the IR829 up and running while the vehicle is stopped.
+
+-->Therefore,users do not have to wait for routers to reload each time the vehicle is stopped.
+
+-->When the engine is running, it generates energy and recharges the battery. When the ignition is turned off, the IR829 can remain operational 	for a pre-determined period of time. This time period is programmable between 60 to 7200 seconds (2 hours) using the IOS ignition 		off-timer command.

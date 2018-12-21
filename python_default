@@ -1,0 +1,4 @@
+->cd ~
+->vim .bashrc
+	copy alias python=python3
+->source ~/.bashrc	

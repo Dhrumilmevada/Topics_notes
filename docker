@@ -1,0 +1,4 @@
+
+-->Docker is a computer program that performs operating-system-level virtualization, also known as "containerization".It was first released in 		2013 and is developed by Docker, Inc.
+
+-->Virtual machines include the application, the required libraries or binaries, and a full guest operating system. Full virtualization 			requires more resources than containerization. Containers include the application and all its dependencies. However, containers 		share the OS kernel with other containers. Containers run as isolated processes in user space on the host operating system. 

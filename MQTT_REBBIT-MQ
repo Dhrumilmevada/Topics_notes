@@ -1,0 +1,28 @@
+
+
+------------------------------------------------------MQTT---------------------------------------
+
+-->MQTT[1] (Message Queuing Telemetry Transport) is an ISO standard (ISO/IEC PRF 20922)[2] publish-subscribe-based messaging protocol. It works 	on top of the TCP/IP protocol.
+
+-->An MQTT system consists of clients communicating with a server, often called a "broker". A client may be either a publisher of information 		or a subscriber. Each client can connect to the broker. 
+
+-->Information is organized in a hierarchy of topics. When a publisher has a new item of data to distribute, it sends a control message with 		the data to the connected broker. The broker then distributes the information to any clients that have subscribed to that topic.
+
+-->MQTT relies on the TCP protocol for data transmission. A variant, MQTT-S, is used over other transports such as Bluetooth. 
+
+-->MQTT sends connection credentials in plain text format and does not include any measures for security or authentication.This can be provided 	by the underlying TCP transport using measures to protect the integrity of transferred information from intercepti	on or duplication. 
+
+
+
+
+
+------------------------------------------------------REBBIT-MQ---------------------------------------
+
+-->RabbitMQ is a message-queueing software called a message broker or queue manager.
+
+
+-->The queue-manager software stores the messages until a receiving application connects and takes a message off the queue. The receiving 			application then processes the message in an appropriate manner. 
+
+-->A message broker can act as a middleman for various services (e.g. a web application, as in this example). They can be used to reduce loads 		and delivery times by web application servers since tasks, which would normally take quite a bit of time to process, can be delegated to a 		third party whose only job is to perform them. 
+
+-->Message queueing is also good when you want to distribute a message to multiple recipients for consumption or for balancing loads between 		workers. 

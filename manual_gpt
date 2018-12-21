@@ -1,0 +1,9 @@
+-->sudo su
+
+-->Start HTTP Server
+	->python -m SimpleHTTPServer 8000
+
+-->Start telnet session
+	->python rfc2217_server.py /dev/ttyUSB1
+
+-->python agp.py 
