@@ -1,0 +1,121 @@
+--> Git is distributed version control system.
+
+--> Two type of version control system 
+	->central version control system
+		->Everything will be remain on centeral server
+	->Distributed version control system
+		->Each editor has his own copy and at remote system there is whole collection
+
+-->To use help in git bash
+	->git COMMAND --help	
+	->git --help COMMAND
+
+-->Three types of stages in git
+	->working directory
+		->untrack file
+		->modified file
+	->staging area
+	->respository
+
+--> before doing push perform pull 
+
+-->git push -u
+	->For every branch that is up to date or successfully pushed, add upstream (tracking) reference, 
+	  used by argument-less git-pull(1) and other commands.
+
+-->before merging i.e. in master first perform pull in master 
+
+-->To merge to master 
+	->git checkout master	
+	->git branch -a
+	->git branch --merged
+	->git marge BRANCH_NAME
+	->git push origin master
+
+-->To delete branch	
+	->git checkout master
+	->git branch --merged
+	->git branch -d BRANCH_NAME
+
+-->To delete brach from remote	
+	->git push origin --delete BRANCH_NAME
+	
+-->To change commit message of previous commit 
+	->git commit --amend -m "NEW_MESSAGE"
+	->it will also change git commit hashcode so that it changes git history
+		
+-->To add files to previous commit
+	->git commit --amend
+	->It will also change git commit hashcode so that it changes git history
+
+-->To undo chages made to the any commit and without changing history 
+	->git revert HASH_CODE    //it will create one commit and dont change history
+	
+-->To reverse the change made in perticular file
+	->git checkout FILE_NAME
+
+-->When you make commit on wrong branch 
+	->git checkout RIGHT_BRANCH               //it will only create new commit on bases of prvious commit
+	->git cherry-pick GIT_HASHCODE_BAD_COMMIT
+
+-->Types of Git reset 
+	->git reset --soft GIT_COMMIT_HASHCODE     //it will keep changes to file but file return back to staging area
+	->git reset GIT_COMMIT_HASHCODE        //this is a soft reset, it will keep changes but files are get to working directory	
+	->git reset --hard GIT_COMMIT_HASHCODE   //it revert all track file but it keep changes of untrack file
+	
+-->To remove any un track directory or files	
+	->git clean -df
+	
+-->To revert any type of changes 
+	->git reflog
+	->git checkout HASH_CODE
+	->git branch BRANCH_NAME or git checkout -b BRANCH_NAME //to save deleted changes into BRANCH_NAME
+	
+-->stash in Git
+	->it is used to save those changes about which you are not sure to commit
+	->saved changes are carried forword to all branch of repository
+	->suppose that you made change to wrong branch so that here you can use stash and apply those changes to right branch
+	
+	->git stash save "PROPER_MASSAGE"
+	->git stash list 
+	->git stash apply STASH_INDEX [FILENAME]    //it will not delete stash from list
+	->git stash pop 						// it will apply and delele stash
+	->git stash drop STASH_INDEX			//to delete perticular stash
+	->git stash delete 					//to delete all stashes in list	     
+	
+-->Sometime it is a complex to use diff and merge in github so that we can made it easy by using diffmerge tool.
+
+-->git add -A is used to add tracked ,utracked file to staging area.
+
+-->git add -u is used to add only tracked file to staging area.
+
+-->git add . used to add all tracked and untracked of current folder and subfolder to staging area.
+
+-->Git Command :-
+	->git version
+	->git config --list
+	->git config --global user.name "USERNAME"
+	->git config --global user.email "EMAIL"
+	->git init
+	->git status
+	->git add -A
+	->git add FILENAME
+	->git reset
+	->git reset FILENAME
+	->git log
+	->git log --stat
+	->git clone URL|SORCE .|DESTINATION
+	->git branch -a
+	->git remote -v
+	->git remote
+	->git remore add origin REPO_PATH
+	->git remote remove origin
+	->git diff
+	->git pull origin master
+	->git push origin master
+	->git branch BRANCH_NAME
+	->git checkout BRANCH_NAME
+	->git branch
+	->git checkout -b BRANCH_NAME
+	->git branch --delete BRANCH_NAME
+	->git diff HASHCODE_1 HASHCODE_2
