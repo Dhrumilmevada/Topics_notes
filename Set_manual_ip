@@ -1,8 +1,11 @@
 
+To assign staic ip
 
--->ifconfig eth0 192.168.1.5 netmask 255.255.255.0 up
-   route add default gw 192.168.1.1
-   echo "nameserver 1.1.1.1" > /etc/resolv.conf
+-->sudo ifconfig eth0 192.168.1.5 netmask 255.255.255.0 up
+   sudo route add default gw 192.168.1.1
+   sudo echo "nameserver 1.1.1.1" > /etc/resolv.conf
 
 
+To assign DHCP ip
 
+--> sudo dhclient enp2s0 -v 

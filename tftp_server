@@ -1,0 +1,31 @@
+1) sudo apt-get install xinetd 
+
+2)Create /etc/xinetd.d/tftp and put this entry
+ 
+  service tftp
+  {
+  protocol        = udp
+  port            = 69
+  socket_type     = dgram
+  wait            = yes
+  user            = nobody
+  server          = /usr/sbin/in.tftpd
+  server_args     = /tftpboot
+  disable         = no
+  }
+
+3) sudo mkdir /tftpboot
+
+4) sudo chmod -R 777 /tftpboot
+
+5) sudo chown -R nobody /tftpboot
+
+6) sudo service xinetd restart
+
+7) sudo service xinetd stop
+
+8) sudo service xinetd status
+
+9) tftp> status
+
+10) tftp> timeout ss

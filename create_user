@@ -1,0 +1,11 @@
+
+-user adduser instadof useradd
+-sudo adduser USERNAME
+
+-to login as NEW_USER from terminal
+ -sudo USERNAME
+
+-to delete user
+ -sudo deluser USERNAME
+
+

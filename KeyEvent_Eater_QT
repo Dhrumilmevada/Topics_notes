@@ -1,0 +1,37 @@
+!#include <QKeyEvent>
+keyPressEater.h
+============================================================
+class KeyPresEater : public QObject{
+public:
+	KeypressEater();
+protected:
+	bool eventFilter(QObject *pOject , QEvent *pEvent);
+}
+
+
+
+KeyPressEater.cpp
+====================================================================
+
+bool KeyPressEater::evenFilter(QObject *pObj,QEvent *pEvent)
+{
+	if(ev->type() == QEvent::KeyPress)
+	{
+	        //QKeyEvent* k = static_cast<QKeyEvent*>(ev);
+	        QKeyEvent *k = (QKeyEvent *)ev;
+	        if(k->key() ==  Qt::Key_Escape)
+	        {
+	            return true;
+	        }
+	        return QObject::eventFilter(obj,ev);
+	}    
+	return QObject::eventFilter(obj,ev);
+}
+
+In target Class(target.cpp)
+=======================================================================
+target::target(){
+	KeyPressEater *keypresseater = new KeyPressEater(this);
+	ui->body->installEventFilter(keypresseater); 	
+}
+
