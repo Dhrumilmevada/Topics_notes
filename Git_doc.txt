@@ -91,6 +91,40 @@
 
 -->git add . used to add all tracked and untracked of current folder and subfolder to staging area.
 
+-->When code already push to remote than revert is better option but change something locally reset is preffered.
+
+-->To clone perticular branch from Git
+	->git clone -b <branch_name> <github_repo_url>
+
+-->To checkout multiple file in git directory
+	->git checkout file1
+	->git checkout file1 file2
+	->git checkout .			//this checkout all files that shows you in output of git diff 
+
+-->To delete master from remote and local
+	-> first create one temorary branch which will point same as master
+		->git checkout -b temporary
+		->git push origin temporary
+	-> then change default branch to temoprary branch (from Setting->Branches)
+	-> then delete master from local
+		-> git branch -d master
+	->then delete master from remote	
+		-> git push origin --delete master
+	now there is one branch in local named as temporary and one branch in remote nmaed as temporary	
+
+->To update branch name to master in local and remote
+	->lets assume we have one branch in local and remote with same name and content in it (i.e temporary branch)
+	->create one more branch in local name as master which will point same as temporary
+		->git checkout -b master
+		->git push origin master
+	->now we have two branches (i.e. temporary and master) in both local and remote at same level
+	->now change default branch from renote to master (from Setting->Branches)
+	->then delete temporary from local
+		->git branch -d temporary
+	->then delete temporary from remote
+		->git push origin --delete temporary
+		
+
 -->Git Command :-
 	->git version
 	->git config --list
